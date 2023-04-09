@@ -420,7 +420,7 @@ class Treatment_m extends CI_Model
         return $query;
     }
 
-    function saveMateriBelajar($subtema_id = null, $tema_id = null, $skor, $prioritas)
+    function saveMateriBelajar($subtema_id = null, $tema_id = null, $skor = null, $prioritas = null)
     {
         $params['id'] =  "";
         $params['user_id'] =  $this->session->id;
