@@ -256,7 +256,7 @@ class Treatment_m extends CI_Model
         return $query;
     }
 
-    function saveMenuBelajar($tema_id = null, $skor, $prioritas)
+    function saveMenuBelajar($tema_id = null, $skor = null, $prioritas = null)
     {
         $params['id'] =  "";
         $params['user_id'] =  $this->session->id;
@@ -267,7 +267,7 @@ class Treatment_m extends CI_Model
         $this->db->insert('tb_menu_belajar', $params);
     }
 
-    function saveMenuHasilBelajar($tema_id = null, $skor, $prioritas)
+    function saveMenuHasilBelajar($tema_id = null, $skor = null, $prioritas = null)
     {
         $params['id'] =  "";
         $params['user_id'] =  $this->session->id;
