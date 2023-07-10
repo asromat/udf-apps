@@ -11,7 +11,7 @@
                         <div class="container">
                             <h3 class="text-white mb-1">Belajar Efektif dengan Manajemen Pengetahuan</h3>
                             <p class="text-white mb-4">KM Learning System membantumu belajar dengan memberikan rekomendasi berdasarkan keinginan dan kamampuanmu.</p>
-                            <a class="btn btn-creative btn-warning" href="<?= base_url("belajar")?>">Pelajari</a>
+                            <a class="btn btn-creative btn-warning" href="<?= base_url("belajar") ?>">Pelajari</a>
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                         <div class="container">
                             <h3 class="text-white mb-1">Menggunakan Model SECI</h3>
                             <p class="text-white mb-4">Penggunaan model SECI memungkinkan kamu memiliki susunan materi sesuai hasil analisis karakteristikmu.</p>
-                            <a class="btn btn-creative btn-warning" href="<?= base_url("belajar")?>">Pelajari</a>
+                            <a class="btn btn-creative btn-warning" href="<?= base_url("belajar") ?>">Pelajari</a>
                         </div>
                     </div>
                 </div>
@@ -40,6 +40,7 @@
                 <h2 class="text-white">Yuk Selesaikan Misi Belajarmu !</h2>
                 <p class="mb-4 text-white">Materi telah disusun berdasarkan analisis keinginan dan kemampuanmu. Jadi, kamu bisa dengan mudah belajar.</p>
                 <a class="btn btn-creative btn-warning" href="<?= base_url("p/knowledge-management") ?>">Tentang Knowledge Management</a>
+                <a class="btn btn-creative btn-secondary" target="_blank" href="https://www.canva.com/design/DAFoR29g8Z8/ZxEbkh5U4pqpto4UfxGMOw/view?utm_content=DAFoR29g8Z8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Petunjuk Penggunaan</a>
             </div>
         </div>
     </div>
@@ -50,26 +51,27 @@
                 <h4 class="text-white text-center">List Materi</h4>
             </div>
         </div>
-        <?php 
-            $no = 1; foreach ($menubelajar->result() as $key => $datas) {;
-            $data = $this->fhe->getById("tb_tema","id",$datas->tema_id)->row(); 
+        <?php
+        $no = 1;
+        foreach ($menubelajar->result() as $key => $datas) {;
+            $data = $this->fhe->getById("tb_tema", "id", $datas->tema_id)->row();
         ?>
-        <!-- Timeline Content -->
-        <a href="<?=base_url("belajar/rekomendasimateri/".$data->id)?>">
-        <div class="card timeline-card bg-warning">
-            <div class="card-body">
-                <div class="d-flex justify-content-between">
-                    <div class="timeline-text mb-2">
-                        <span class="badge mb-2 rounded-pill"><?= strtoupper($data->kategori)?></span>
-                        <h6><?= $data->topik ?></h6>
-                    </div>
-                    <div class="timeline-icon mb-2">
-                        <i class="bi bi-award h1 mb-0"></i>
-                    </div>
-                </div>
-                <p class="mb-2"><?= $data->deskripsi ?></p>
-                <!-- Single Skill Progress Bar -->
-                <!-- <div class="skill-progress-bar d-flex align-items-center mb-2">
+            <!-- Timeline Content -->
+            <a href="<?= base_url("belajar/rekomendasimateri/" . $data->id) ?>">
+                <div class="card timeline-card bg-warning">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <div class="timeline-text mb-2">
+                                <span class="badge mb-2 rounded-pill"><?= strtoupper($data->kategori) ?></span>
+                                <h6><?= $data->topik ?></h6>
+                            </div>
+                            <div class="timeline-icon mb-2">
+                                <i class="bi bi-award h1 mb-0"></i>
+                            </div>
+                        </div>
+                        <p class="mb-2"><?= $data->deskripsi ?></p>
+                        <!-- Single Skill Progress Bar -->
+                        <!-- <div class="skill-progress-bar d-flex align-items-center mb-2">
                     <div class="skill-icon shadow-sm p-2">
                         <i class="bi bi-code text-dark fz-20"></i>
                     </div>
@@ -87,15 +89,15 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="timeline-tags mb-2">
-                    <?php foreach ($this->fhe->showTag($data->tag) as $tag) {; ?>
-                        <a href="<?= base_url("tag") ?>/<?= $tag ?>"><span class="badge fw-normal bg-primary">#<?= $tag ?></span></a>
-                    <?php } ?>
+                        <div class="timeline-tags mb-2">
+                            <?php foreach ($this->fhe->showTag($data->tag) as $tag) {; ?>
+                                <a href="<?= base_url("tag") ?>/<?= $tag ?>"><span class="badge fw-normal bg-primary">#<?= $tag ?></span></a>
+                            <?php } ?>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        </a> 
-        <?php } ?>       
+            </a>
+        <?php } ?>
     </div>
 
     <div class="pb-3"></div>
@@ -140,6 +142,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <div class="text-center">
+                <a href="https://wa.me/6281231390340" class="btn btn-success btn-block">Beri tanggapan Penelitian</a>
             </div>
         </div>
     </div>
