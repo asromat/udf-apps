@@ -17,3 +17,5 @@
         </div>
     </div>
 </div>
+
+<?php header( "refresh:5;URL=".base_url('auth/login').""); ?>

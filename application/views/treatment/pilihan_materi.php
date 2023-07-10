@@ -3,9 +3,9 @@
         <div class="card image-gallery-card direction-rtl">
             <div class="card-body">
                 <input type="hidden" name="id[]" value="1">
-                <h3>PILIHAN MATERI</h3>
+                <h3>PILIH MATERI PRIORITASMU</h3>
                 <form action="<?= base_url("treatment/resultMateriPilihan")?>" method="post">
-                <h6>Kamu dapat memilih materi yang menjadi prioritasmu. Silahkan pilih sesuai keinginamu yaa...</h6>
+                <h6>Kamu dapat memilih materi yang menjadi prioritasmu. Kamu bisa memilih satu atau semua sekaligus. Silahkan pilih sesuai keinginamu yaa...</h6>
                 <img class="mb-3 img-thumbnail figure-img" src="<?= base_url() ?>/assets/img/template/desaingrafis.jpg" alt="">
                 <h4 align="left"><input type="checkbox" name="pil[]" value="1"> Desain Grafis untuk UMKM<br></h4>
                 <hr>

@@ -30,7 +30,12 @@
                     <i class="bi bi-google me-1"></i> Login dengan Google
                 </a>
                 <a class="btn btn-success mb-1 w-100" href="<?= base_url("auth/loginOTP")?>">
-                    <i class="bi bi-whatsapp me-1"></i> Login dengan WA
+                    <i class="bi bi-whatsapp me-1"></i> Login dengan No WA
+                </a>
+                <hr>
+                </a>
+                <a class="btn btn-outline-info mb-1 w-100" target="_blank" href="https://www.canva.com/design/DAFoR29g8Z8/ZxEbkh5U4pqpto4UfxGMOw/view?utm_content=DAFoR29g8Z8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
+                    <i class="bi bi-whatsapp me-1"></i> Petunjuk Penggunaan
                 </a>
             </form>
         </div>
