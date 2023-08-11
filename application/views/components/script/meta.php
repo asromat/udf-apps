@@ -10,8 +10,8 @@
 
 <!-- Title -->
 <title>KM Learning System</title>
-<meta name="description" content="KNOWLEDGE MANAGEMENT LEARNING SYSTEM - BY FITRAH IZUL FALAQ">
-<meta name="keywords" content="knowledge management, lms, km learning, seci models" />
+<meta name="description" content="APLIKASI BUDAYA KONSERVASI TAMBRAUW">
+<meta name="keywords" content="aplikasi budaya konvervasi tambrauw, konservasi, tambrauw, budaya" />
 <meta name="image" content="https://d1fdloi71mui9q.cloudfront.net/iA77vXfcT265XvBR2dZs_AP04aC2F3SG4yePf">
 
 <!-- Open Graph / Facebook -->

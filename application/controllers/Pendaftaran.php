@@ -9,7 +9,7 @@ class Pendaftaran extends CI_Controller
     {
         parent::__construct();
         checkLogged();
-        
+
         $this->load->model('pendaftaran_m');
         $this->load->library('encryption');
         $this->load->library("wa");
@@ -84,8 +84,9 @@ class Pendaftaran extends CI_Controller
             if ($this->db->affected_rows() > 0) {
                 $this->session->set_flashdata('success', 'Pendaftaran Berhasil, silahkan login menggunakan nomor HP yang telah anda daftarkan');
             }
-            $kalimat = "Terima kasih, *" . $post['nama'] . "*. Anda telah melakukan pendaftaran pada sistem Knowledge Management System Penelitian. \n \n" . "Berikut Informasi akun anda : \n\nEmail : " . $post['email'] . "\nHP terdaftar : " . $post['hp'] . "\n \nSelamat menjelajah.\nSalam Hangat dari saya, *Fitrah Izul Falaq* \nhttps://ceo.bikinkarya.com";
-            $this->wa->send($post['hp'], $kalimat);
+
+            // $kalimat = "Terima kasih, *" . $post['nama'] . "*. Anda telah melakukan pendaftaran pada sistem Knowledge Management System Penelitian. \n \n" . "Berikut Informasi akun anda : \n\nEmail : " . $post['email'] . "\nHP terdaftar : " . $post['hp'] . "\n \nSelamat menjelajah.\nSalam Hangat dari saya, *Fitrah Izul Falaq* \nhttps://ceo.bikinkarya.com";
+            // $this->wa->send($post['hp'], $kalimat);
             redirect('auth/login');
         }
     }

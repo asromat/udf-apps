@@ -8,7 +8,7 @@ class Forum extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        checkLogin();
+		checkLogin();
         $this->load->model("forum_m");
     }
 

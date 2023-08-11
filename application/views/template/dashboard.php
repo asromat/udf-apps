@@ -87,9 +87,6 @@
                         <a href="<?= base_url("p/pengembang/")?>"><i class="bi bi-info-circle"></i> Tentang Pengembang</a>
                     </li>
                     <li>
-                        <a href="<?= base_url("treatment/rekomendasi")?>"><i class="bi bi-info-circle"></i> Rekomendasi</a>
-                    </li>
-                    <li>
                         <a href="<?= base_url("p/faq/")?>"><i class="bi bi-info-circle"></i> FAQ</a>
                     </li>
                     <li>

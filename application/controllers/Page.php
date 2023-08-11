@@ -6,7 +6,7 @@ class Page extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		checkGayaBelajar();
+		checkLogin();
 	}
 
 	public function index()
