@@ -9,7 +9,7 @@
 <div class="login-wrapper d-flex align-items-center justify-content-center">
     <div class="custom-container">
         <div class="text-center px-4">
-            <img class="login-intro-img" src="<?= base_url() ?>assets/img/bg-img/37.png" alt="">
+            <img class="login-intro-img" src="<?= base_url() ?>assets/img/template/settings.png" alt="">
         </div>
 
         <!-- Register Form -->

@@ -53,17 +53,17 @@ class Profil extends CI_Controller
 			$post = $this->input->post(null, TRUE);
 			
 			//CEK GAMBAR
-			$config['upload_path']          = 'assets/files/foto_profil/';
+			$config['upload_path']          = 'files/foto_profil/';
 			$config['allowed_types']        = 'jpg|png|jpeg';
 			$config['max_size']             = 5000;
-			$config['file_name']            = strtoupper($post['nama']) . '--' . $post['hp'];
+			$config['file_name']            = strtoupper($post['nama']) . '--' . date("ymdhmsa");
 
 			$this->load->library('upload', $config);
 			if (@$_FILES['foto']['name'] != null) {
 				if ($this->upload->do_upload('foto')) {
 					$itemfoto = $this->user_m->get($post['id'])->row();
 					if ($itemfoto->foto != null) {
-						$target_file = 'assets/files/foto_profil/' . $itemfoto->foto;
+						$target_file = 'files/foto_profil/' . $itemfoto->foto;
 						unlink($target_file);
 					}
 
@@ -159,7 +159,7 @@ class Profil extends CI_Controller
 		$this->load->model('user_m');
 		$itemfoto = $this->user_m->get($id)->row();
 		if ($itemfoto->foto != null) {
-			$target_file = 'assets/files/foto_profil/' . $itemfoto->foto;
+			$target_file = 'files/foto_profil/' . $itemfoto->foto;
 			unlink($target_file);
 		}
 		$params['foto'] = null;

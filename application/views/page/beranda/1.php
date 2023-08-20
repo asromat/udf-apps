@@ -53,7 +53,7 @@
                 <h3>Menu Utama</h3>
                 <div class="row">
                     <div class="col">
-                        <a href="">
+                        <a href="<?= base_url("jadwal/belajar")?>">
                             <img class="img-fluid img-thumbnail" src="<?= base_url() ?>/assets/img/pic/belajar.png" alt="">
                         </a>
                         <h6>Belajar</h6>
@@ -63,52 +63,6 @@
                             <img class="img-fluid img-thumbnail" src="<?= base_url() ?>/assets/img/pic/setting.png" alt="">
                         </a>
                         <h6>Setting Akun</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="pb-3"></div>
-
-    <div class="container">
-        <div class="card mb-3" style="background-image: url('<?= base_url() ?>/assets/img/core-img/1.png')">
-            <div class="card-body">
-                <span class="d-inline-block badge bg-warning mb-2">
-                    <i class="bi bi-star-fill me-1"></i>
-                    <i class="bi bi-star-fill me-1"></i>
-                    <i class="bi bi-star-fill me-1"></i>
-                    <i class="bi bi-star-fill me-1"></i>
-                    <i class="bi bi-star-fill"></i>
-                </span>
-                <h3>Informasi Terbaru</h3>
-
-                <div class="testimonial-slide-three-wrapper">
-                    <div class="testimonial-slide3 testimonial-style3">
-
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="text-content">
-                                <h6 class="mb-2">Baca panduan penggunaan agar lebih mudah menggunakan platform KM Learning System</h6>
-                                <span class="d-block">Fitrah Izul Falaq, Admin</span>
-                            </div>
-                        </div>
-
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="text-content">
-                                <h6 class="mb-2">Platfom ini dalam tahap uji coba. Kritik dan saran bisa menghubungi 081 231 390 340 (Fitrah)</h6>
-                                <span class="d-block">Fitrah Izul Falaq, Admin</span>
-                            </div>
-                        </div>
-
-                        <!-- Single Testimonial Slide -->
-                        <div class="single-testimonial-slide">
-                            <div class="text-content">
-                                <h6 class="mb-2">Saat ini tersedia 3 materi pokok, selamat belajar.</h6>
-                                <span class="d-block">Fitrah Izul Falaq, Admin</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

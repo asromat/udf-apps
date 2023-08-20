@@ -4,7 +4,7 @@
         <div class="card user-info-card mb-3">
             <div class="card-body d-flex align-items-center">
                 <div class="user-profile me-3">
-                    <img src="<?= base_url() ?>/assets/img/icons/icon-512x512.png" alt="">
+                <img src="<?= $this->fhe->getByID("tb_user", "id", $this->session->id)->row("foto") == null ? base_url() . "/assets/img/icons/icon-512x512.png" : base_url() . "/files/foto_profil/" . $this->fhe->getByID("tb_user", "id", $this->session->id)->row("foto") ?>" alt="">
                 </div>
                 <div class="user-info">
                     <div class="d-flex align-items-center">

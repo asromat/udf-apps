@@ -44,7 +44,7 @@ class Pendaftaran_m extends CI_Model
 		$params['suku'] =  $post['suku'];
 		$params['created'] =  date("Y:m:d:h:i:sa");
 		$params['status'] =  "1";
-		$params['tipe_user'] =  "1";
+		$params['tipe_user'] =  $post["tipe"];
 		$this->db->insert('tb_user', $params);
 	}
 

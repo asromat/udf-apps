@@ -1,17 +1,37 @@
+<!-- Header Area -->
+<div class="header-area" id="headerArea">
+    <div class="container">
+        <!-- Header Content -->
+        <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
+            <!-- Back Button -->
+            <div class="back-button">
+                <a href="<?= base_url() ?>">
+                    <i class="bi bi-arrow-left-short"></i>
+                </a>
+            </div>
+
+            <!-- Page Title -->
+            <div class="page-heading">
+                <h6 class="mb-0"><?= $menu ?></h6>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="page-content-wrapper py-3">
     <div class="container">
         <!-- User Information -->
         <div class="card user-info-card mb-3">
             <div class="card-body d-flex align-items-center">
                 <div class="user-profile me-3">
-                    <img src="<?= base_url() ?>/assets/img/icons/icon-512x512.png" alt="">
+                    <img src="<?= $this->fhe->getByID("tb_user", "id", $this->session->id)->row("foto") == null ? base_url() . "/assets/img/icons/icon-512x512.png" : base_url() . "/files/foto_profil/" . $this->fhe->getByID("tb_user", "id", $this->session->id)->row("foto") ?>" alt="">
                 </div>
                 <div class="user-info">
                     <div class="d-flex align-items-center">
-                        <h5 class="mb-1"><?= $this->fhe->getByID("tb_user","id",$this->session->id)->row("nama")?></h5>
-                        <span class="badge bg-warning ms-2 rounded-pill"><?= $this->fhe->userType($this->session->tipe_user)->deskripsi?></span>
+                        <h5 class="mb-1"><?= $this->fhe->getByID("tb_user", "id", $this->session->id)->row("nama") ?></h5>
+                        <span class="badge bg-warning ms-2 rounded-pill"><?= $this->fhe->userType($this->session->tipe_user)->deskripsi ?></span>
                     </div>
-                    <p class="mb-0"><i class="bi bi-house"></i> <?= $this->fhe->getByID("tb_user","id",$this->session->id)->row("domisili")?> <i class="bi bi-phone"></i> <?= $this->fhe->getByID("tb_user","id",$this->session->id)->row("hp")?></p> 
+                    <p class="mb-0"><i class="bi bi-house"></i> <?= $this->fhe->getByID("tb_user", "id", $this->session->id)->row("domisili") ?> <i class="bi bi-phone"></i> <?= $this->fhe->getByID("tb_user", "id", $this->session->id)->row("hp") ?></p>
                 </div>
             </div>
         </div>
@@ -21,7 +41,7 @@
                 <p class="mb-2">Pengaturan Akun</p>
 
                 <div class="single-setting-panel">
-                    <a href="<?= base_url("profil/edit/".$this->session->id)?>">
+                    <a href="<?= base_url("profil/edit/" . $this->session->id) ?>">
                         <div class="icon-wrapper">
                             <i class="bi bi-person"></i>
                         </div>
@@ -30,7 +50,7 @@
                 </div>
 
                 <div class="single-setting-panel">
-                    <a href="<?= base_url("profil/setPassword")?>">
+                    <a href="<?= base_url("profil/setPassword") ?>">
                         <div class="icon-wrapper bg-warning">
                             <i class="bi bi-shield-lock"></i>
                         </div>
@@ -92,7 +112,7 @@
                 </div>
 
                 <div class="single-setting-panel">
-                    <a href="<?=base_url("auth/logout")?>">
+                    <a href="<?= base_url("auth/logout") ?>">
                         <div class="icon-wrapper bg-danger">
                             <i class="bi bi-box-arrow-right"></i>
                         </div>
@@ -104,4 +124,4 @@
     </div>
 </div>
 
-<?php $this->view("message")?>
+<?php $this->view("message") ?>

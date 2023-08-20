@@ -19,4 +19,11 @@ class Statistik extends CI_Controller
         $data['login'] = $this->validation_m->getLogLogin($this->session->id,"6");
         $this->template->load('template/detail', 'statistik/home.php', $data);
     }
+
+    function dataSiswa()
+    {
+        $data['menu'] = "DATA SISWA";
+        $data['row'] = $this->fhe->get2w("tb_user","tipe_user","1","status","1");
+        $this->template->load('template/detail', 'statistik/data_siswa.php', $data);
+    }
 }

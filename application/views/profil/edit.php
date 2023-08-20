@@ -1,3 +1,4 @@
+<?php $this->view("message") ?>
 <div class="page-content-wrapper py-3">
     <div class="container">
         <!-- User Meta Data-->
@@ -39,6 +40,21 @@
                             <ion-icon name="close-circle"></ion-icon>
                         </i>
                     </div>
+                    <hr>
+                    <?php if ($row->foto != null) { ?>
+                        <div>
+                            <img src="<?= base_url('files/foto_profil/' . $row->foto) ?>" style="width: 10%"><br>
+                            <input type="hidden" name="foto" value="<?= $this->input->post('foto') ?? $row->foto; ?>">
+                            <a href="<?= site_url('profil/hapusfoto/' . $row->id); ?>"><small>Hapus foto?</small></a>
+                        </div>
+                    <?php } else {  ?>
+                        <div class="form-group">
+                            <label>Foto</label>
+                            <input type="file" class="form-control" accept=".jpg,.png,.jpeg" name="foto">
+                            <small>Maksimal ukuran file 514 Kb</small>
+                            <br>
+                        </div>
+                    <?php } ?>
                     <hr>
                     <div class="form-button">
                         <button type="submit" class="btn btn-success btn-block">EDIT</button>

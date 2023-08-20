@@ -86,9 +86,9 @@
                     <li>
                         <a href="<?= base_url("p/pengembang/")?>"><i class="bi bi-info-circle"></i> Tentang Pengembang</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="<?= base_url("p/faq/")?>"><i class="bi bi-info-circle"></i> FAQ</a>
-                    </li>
+                    </li> -->
                     <li>
                         <div class="night-mode-nav">
                             <i class="bi bi-moon"></i> Dark Mode
@@ -122,7 +122,7 @@
                 <div class="copyright-info">
                     <p>
                         <span id="copyrightYear"></span>
-                        &copy; Made by <a href="https://ceo.bikinkarya.com">Fitrah Izul Falaq</a>
+                        &copy; Made by <a href="https://ceo.bikinkarya.com">Bikinkarya Creative Labs</a>
                     </p>
                 </div>
             </div>
@@ -146,24 +146,24 @@
                             <i class="bi bi-clipboard-data"></i>
                         </a>
                     </li>
-
+<!-- 
                     <li>
                         <a href="<?= base_url("quiz")?>">
                             <i class="bi bi-question-circle"></i>
                         </a>
-                    </li>
+                    </li> -->
 
                     <li class="active">
-                        <a href="<?= base_url("belajar")?>">
+                        <a href="<?= base_url("jadwal/belajar/")?>">
                             <i class="bi bi-book"></i>
                         </a>
                     </li>
-
+<!-- 
                     <li>
                         <a href="<?= base_url("forum")?>">
                             <i class="bi bi-collection"></i>
                         </a>
-                    </li>
+                    </li> -->
 
                     <li>
                         <a href="<?= base_url("p/settings/")?>">

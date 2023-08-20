@@ -15,7 +15,7 @@
         <!-- Register Form -->
         <div class="register-form mt-4">
             <h4 class="mb-3 text-center">Pendaftaran Peserta</h4>
-            <a class="btn btn-primary btn-google mb-1 w-100 mb-3" href="<?= base_url("auth/google") ?>"><i class="bi bi-google me-1"></i> Buat Akun dengan Google</a>
+            <!-- <a class="btn btn-primary btn-google mb-1 w-100 mb-3" href="<?= base_url("auth/google") ?>"><i class="bi bi-google me-1"></i> Buat Akun dengan Google</a> -->
             <?= form_open_multipart('') ?>
             <div class="form-group text-start mb-3">
                 <small class="text-sm-start">Akun</small>
