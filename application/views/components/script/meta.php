@@ -12,21 +12,21 @@
 <title>APLIKASI BUDAYA KONSERVASI TAMBRAUW</title>
 <meta name="description" content="APLIKASI BUDAYA KONSERVASI TAMBRAUW">
 <meta name="keywords" content="aplikasi budaya konvervasi tambrauw, konservasi, tambrauw, budaya" />
-<meta name="image" content="https://d1fdloi71mui9q.cloudfront.net/iA77vXfcT265XvBR2dZs_AP04aC2F3SG4yePf">
+<meta name="image" content="https://ugc.production.linktr.ee/ebf3cea8-65c4-48b1-9866-7d7d1a96ab3a_474px-Lambang-Kabupaten-Tambrauw--Papua-Barat.png">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bikinkarya.com">
 <meta property="og:title" content="APLIKASI BUDAYA KONSERVASI TAMBRAUW">
 <meta property="og:description" content="APLIKASI BUDAYA KONSERVASI TAMBRAUW - BY BIKINKARYA CREATIVE MEDIA">
-<meta property="og:image" content="https://d1fdloi71mui9q.cloudfront.net/iA77vXfcT265XvBR2dZs_AP04aC2F3SG4yePf">
+<meta property="og:image" content="https://ugc.production.linktr.ee/ebf3cea8-65c4-48b1-9866-7d7d1a96ab3a_474px-Lambang-Kabupaten-Tambrauw--Papua-Barat.png">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://bikinkarya.com">
 <meta property="twitter:title" content="APLIKASI BUDAYA KONSERVASI TAMBRAUW">
 <meta property="twitter:description" content="APLIKASI BUDAYA KONSERVASI TAMBRAUW - BY BIKINKARYA CREATIVE MEDIA">
-<meta property="twitter:image" content="https://d1fdloi71mui9q.cloudfront.net/iA77vXfcT265XvBR2dZs_AP04aC2F3SG4yePf">
+<meta property="twitter:image" content="https://ugc.production.linktr.ee/ebf3cea8-65c4-48b1-9866-7d7d1a96ab3a_474px-Lambang-Kabupaten-Tambrauw--Papua-Barat.png">
 
 <!-- Favicon -->
 <link rel="icon" href="<?= base_url() ?>/assets/img/core-img/favicon.ico">
